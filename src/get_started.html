@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Title -->
+  <title>CyberCode | Get Started</title>
+  <!-- Links -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/hamburger_animation.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body id="getStarted">
+
+  <!-- Man Nav -->
+  <nav class="navbar navbar-expand navbar-dark" id="mainNavBar">
+    <div class="container">
+      <a class="navbar-brand animated fadeInLeft" href="index.html"><img src="assets/company_logo_light.svg" height="27px" alt=""></a>
+      <div class="float-right">
+        <ul class="navbar-nav mr-auto animated fadeInRight">
+          <li class="nav-item mr-4 d-none d-sm-block">
+            <a class="nav-link" href="index.html"><i class="fas fa-user-alt mr-2"></i>Client Login</a>
+          </li>
+          <li class="nav-item slide-nave-toggle">
+            <div id="slideNavToggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="slide-menu bg-dark animated slideInRight d-none" id="slideMenu">
+    <ul class="nav mr-auto d-flex flex-column mt-5">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pricing.html">Pricing</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="get_started.html">Get Started</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item mt-3 d-sm-none">
+        <a class="nav-link" href="index.html"><i class="fas fa-user-alt mr-2"></i>Client Login</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="contentWrap">
+    <!-- Show Case Section -->
+    <section id="showCase"> 
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-12 col-lg-9 col-xl-7 col-12 py-3 text-center">
+            <h1 class="text-light display-4 pb-2 animated fadeInDown">Get Started</h1>
+            <p class="text-light lead  animated fadeIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque iusto magni a vero, nesciunt voluptas optio. Asperiores, libero aspernatur?</p>
+            <a href="get_started.html" class="btn btn-outline-light ml-4 mt-2 animated fadeInUp" role="button" aria-pressed="true">Download client brief</a>
+          </div>
+        </div>
+      </div>
+      
+      <svg id="waveUp" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2309 168"><defs><style>.cls-1{fill:#f8f9fa;}</style></defs><path id="Path_1328" data-name="Path 1328" class="cls-1" d="M0,14.28S375.31,133.59,1108.9,34.46,2309,82.9,2309,82.9V168H0Z"/></svg>
+    </section>
+
+    <!-- Get Started Form -->
+    <section id="form">
+      <div class="container">
+        <form action="#">
+          <div class="row">
+            <!-- About Company -->
+            <div class="col-12 col-lg-6">
+              <h4 class="text-center animated fadeIn"><span class="number-1 h2 text-info font-weight-bold">1 -</span> Tell Us About Your <span>Business</span></h4>
+              <p class="text-center animated fadeIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quisquam perspiciatis incidunt illum adipisci accusamus!</p>
+              <div class="card mt-4 shadow animated fadeInUp">
+                <div class="card-body">
+                  <!-- Clients Name -->
+                  <div class="form-group mt-2">
+                    <label for="name">Your Name</label>
+                    <input type="name" class="form-control" id="name" placeholder="Your Name" name="clients_name">
+                  </div>
+                  <!-- Company Name -->
+                  <div class="form-group mt-4">
+                    <label for="companyName">Company Name</label>
+                    <input type="name" class="form-control" id="companyName" placeholder="Enter company Name" name="company_name">
+                  </div>
+                  <!-- Company Address -->
+                  <div class="form-group mt-4">
+                    <label for="companyAddress">Company Address</label>
+                    <div class="form-row">
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="cuntry" placeholder="Cuntry" name="cuntry">
+                      </div>
+                      <div class="col-sm-8 mt-3 mt-sm-0">
+                        <input type="text" class="form-control" id="street" placeholder="Street" name="street"> 
+                      </div>
+                    </div>
+                    <div class="form-row mt-sm-3">
+                      <div class="col-sm-4 mt-3 mt-sm-0">
+                        <input type="text" class="form-control" id="city" placeholder="City" name="city">
+                      </div>
+                      <div class="col-sm-4 mt-3 mt-sm-0">
+                        <input type="text" class="form-control" id="state" placeholder="State" name="state">
+                      </div>
+                      <div class="col-sm-4 mt-3 mt-sm-0">
+                        <input type="text" class="form-control" id="zip" placeholder="Zip Code" name="zip_code">
+                      </div>      
+                    </div>
+                  </div>
+                  <!-- Business Description -->
+                  <div class="form-group mt-4">
+                    <label for="businessDescription">Business Description</label>
+                    <textarea class="form-control" id="businessDescription" rows="3" placeholder="Describe Your Business" name="business_description"></textarea>
+                  </div>
+                  <!-- Company Email -->
+                  <div class="form-group mt-4">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="email">
+                  </div>
+                  <!-- Company Phone -->
+                  <div class="form-group mt-4">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Your Phone Number" name="phone">
+                  </div>
+                  <!-- Company Website -->
+                  <div class="form-group mt-4">
+                    <label for="companyWebsite">Cumpany Website?</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="GroupPrepend">www.</span>
+                      </div>
+                      <input type="text" class="form-control" id="companyWebsite" placeholder="Current Website" aria-describedby="inputGroupPrepend" name="website">
+                    </div>
+                  </div>
+                  <!-- Company Branding -->
+                  <div class="form-group mt-4">
+                    <label for="companyBranding">Cumpany Branbing?</label>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="logo">
+                      <label class="custom-control-label" for="logo">Logo</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="colors">
+                      <label class="custom-control-label" for="colors">Colors</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="fonts">
+                      <label class="custom-control-label" for="fonts">Fonts</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- About Project -->
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0 pt-4 pt-lg-0">
+              <h4 class="text-center animated fadeIn"><span class="number-2 h2 text-info font-weight-bold">2 -</span> Tell Us About Your <span>Project</span></h4>
+              <p class="text-center animated fadeIn">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, mollitia. Odio sed earum esse harum.</p>
+              <div class="card mt-4 shadow animated fadeInUp">
+                <div class="card-body">
+                  <!-- Project Name -->
+                  <div class="form-group mt-2">
+                    <label for="projectName">Project Name</label>
+                    <input type="name" class="form-control" id="projectName" placeholder="Name Your Project" name="project_name">
+                  </div>
+                  <!-- Company Category -->
+                  <div class="form-group mt-4">
+                    <label for="projectCategory">Project Category</label>
+                    <select class="form-control" id="projectCategory" name="project_category"> 
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <!-- Project Description -->
+                  <div class="form-group mt-4">
+                    <label for="projectDescription">Project Description</label>
+                    <textarea class="form-control" id="projectDescription" rows="3" placeholder="Describe Your Project" name="project_description"></textarea>
+                  </div>
+                  <!-- Project Requirements -->
+                  <div class="form-group mt-4">
+                    <label for="projectRequirements">Project Requirements</label>
+                    <textarea class="form-control" id="projectRequirements" rows="3" placeholder="Describe Any Project requirements" name="project_requirements"></textarea>
+                  </div>
+                  <!-- Project Funtionality -->
+                  <div class="form-group mt-4">
+                    <label for="projectFuntionality">Project Funtionality</label>
+                    <textarea class="form-control" id="projectRequirements" rows="3" placeholder="Describe Key Funtionality" name="project_funtionality"></textarea>
+                  </div>
+                  <!-- Project Inspiration -->
+                  <div class="form-group mt-4">
+                    <label for="projectInspiration">Project Inspiration</label>
+                    <textarea class="form-control" id="projectInspiration" rows="3" placeholder="Where did you receive your inspiration for this project?" name="project_inspiration"></textarea>
+                  </div>
+                  <!-- Future Scail -->
+                  <div class="form-row mt-4">
+                    <div class="form-group col-lg-6">
+                      <!-- Your Budget -->
+                      <label for="yourBudget">Your Budget?</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="GroupPrepend">$</span>
+                        </div>
+                        <input type="text" class="form-control" id="yourBudget" aria-describedby="inputGroupPrepend" name="budget">
+                      </div>
+                    </div>
+                    <div class="form-group col-lg-6 pl-lg-5">
+                      <label for="projectDescription">Future Scail?</label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="futureScail" id="futureScailYes" value="futureScailYes">
+                        <label class="form-check-label" for="futureScailYes">Yes</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="futureScail" id="futureScailNo" value="futureScailNo">
+                        <label class="form-check-label" for="futureScailNo">No</label>
+                      </div>
+                    </div>
+                  </div> 
+                  <button type="submit" class="btn btn-primary float-right mt-4">Submit Project Brief</button>                              
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    
+
+    <!-- Main Footer -->
+    <footer id="mainFooter" class="bg-dark">
+
+      <svg id="waveDown" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2309 168"><defs><style>.cls-1{fill:#f8f9fa;}</style></defs><path id="Path_1329" data-name="Path 1329" class="cls-1" d="M2309,153.72S1933.69,34.41,1200.1,133.54,0,85.1,0,85.1V0H2309Z"/></svg>
+
+      <div class="container mt-5">
+        <div class="row pt-4">
+          <div class="col-6 col-md-4">
+            <h4>Website</h4>
+            <ul class="nav flex-column">
+                <li class="nav-item link">
+                  <a class="nav-link hvr-underline-from-left" href="index.html">Home</a>
+                </li>
+                <li class="nav-item link">
+                  <a class="nav-link hvr-underline-from-left" href="pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item link">
+                  <a class="nav-link active" href="get_started.html">Get Started</a>
+                </li>
+              </ul>
+            </div>
+          <div class="col-6 col-md-4">
+            <h4>Connect</h4>
+            <ul class="nav flex-column">
+                <li class="nav-item link">
+                  <a class="nav-link hvr-underline-from-left" href="#"><i class="fab fa-facebook mr-2"></i>Facebook</a>
+                </li>
+                <li class="nav-item link">
+                  <a class="nav-link hvr-underline-from-left" href="#"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                </li>
+                <li class="nav-item link">
+                  <a class="nav-link hvr-underline-from-left" href="#"><i class="fab fa-pinterest-p mr-2"></i>Pintrist</a>
+                </li>
+                <li class="nav-item link">
+                  <a class="nav-link hvr-underline-from-left" href="#"><i class="fab fa-dribbble mr-2"></i>Dribbble</a>
+                </li>
+                <li class="nav-item link">
+                  <a class="nav-link hvr-underline-from-left" href="#"><i class="fab fa-twitter mr-2"></i>Twitter</a>
+                </li>
+                <li class="nav-item link">
+                  <a class="nav-link hvr-underline-from-left" href="#"><i class="fab fa-youtube mr-2"></i>YouTube</a>
+                </li>
+                <li class="nav-item link">
+                  <a class="nav-link hvr-underline-from-left" href="#"><i class="fab fa-instagram mr-2"></i>Instagram</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 mt-4 mt-md-0">
+              <h4>Contact</h4>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link"><i class="fas fa-map-marker-alt mr-2"></i>Orlando FL.</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"><i class="fas fa-phone mr-2"></i>352-888-8888</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"><i class="far fa-envelope mr-2"></i>sails@cybercode.dev</a>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="btn btn-sm btn-outline-light mt-2 ml-3" role="button" aria-pressed="true">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center mb-1 mt-5">
+              <p class="small">&copy 2019 CyberCode, LLC. All rghts reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

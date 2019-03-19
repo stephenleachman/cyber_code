@@ -1,0 +1,553 @@
+
+/* 
+Varables
+=============================================================================================================================================================
+*/ 
+
+// _____________________ Colors _____________________
+
+$dark:          #152A49 !default;
+$primary:       #6F42C1 !default;
+$secondary:     #0099FF !default;
+$success:       #28A745 !default;
+$info:          #FD7E14 !default;
+$warning:       #FFC107 !default;
+$danger:        #DC3545 !default;
+$light:         #E9ECEF !default;
+$lighter:       #F8F9FA !default;
+$gray:          #6C757D !default;
+$grayFooter:    rgb(132, 139, 145) !default;
+$grayHover:     rgba(233, 236, 239, 0.932) !default;
+$gradient:        linear-gradient(to right, $secondary, $primary);/* Chrome 10-25, Safari 5.1-6 */
+
+// _____________________ Buttons _____________________
+
+$btn-border-radius:           30px !default;
+$btn-padding-x:               30px !default;
+$btn-box-shadow:              0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !default;
+
+$btn-padding-x-sm:            30px !default;
+$btn-border-radius-sm:        30px !default;
+
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import url("https://use.typekit.net/zdm1ats.css");
+
+/* 
+Global Styles
+=============================================================================================================================================================
+*/ 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  color: $info;
+}
+
+.btn {
+  font-weight: 500;
+}
+
+h1, h2, h3, h4, h4 {
+  color: $dark;
+  font-family: armada, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+p {
+  color: $dark;
+  font-family: armada, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+a {
+  color: $dark;
+  font-family: armada, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.opacity {
+  opacity: 0;
+}
+
+
+
+ @media (min-width: 1550px) { 
+  .container {
+    max-width: 1500px;
+  }
+}
+
+// _____________________ Slide Menu _____________________
+
+#slideMenu {
+  width: 230px;
+  height: 100vh;
+  margin-top: -57.8px;
+  position: fixed;
+  right: 0;
+  z-index: 1000;
+  overflow: hidden;
+  padding-top: 10px;
+  ul {
+    .active {
+      border-left: 2px solid $info;
+      background: rgba(0, 0, 0, 0.137); 
+      a { color: $info; }
+    }
+    li {
+      border-left: 4px solid $dark;
+      a { color: $light; }
+      a:hover { 
+        background: rgba(0, 0, 0, 0.137); 
+      }
+    }
+  }
+}
+
+#mainNavBar {
+  a:hover{ color: $grayHover; }
+  z-index: 10000;
+}
+
+// _____________________ Main Footer _____________________
+
+#mainFooter {
+  margin-top: 50px;
+    #waveDown {
+      width: 100vw;
+      height: 100%;
+      margin-top: -5px;
+    }
+  h4 {
+    color: $grayHover;
+    font-size: 1.1em;
+  }
+  p {
+    color: $grayFooter;
+    font-size: .9em;
+  }
+  .footer-border { border-bottom: rgba(233, 236, 239, 0.404) 1px solid; }
+
+  .nav .nav-item .nav-link {
+    color: $grayFooter;
+    font-size: .9em;
+  }
+  .nav .link a:hover {
+    color: $light;
+  }
+  .nav .nav-item .active {
+    color: $grayHover;
+    cursor: default;
+  }
+  .btn {
+    border: $grayFooter 1px solid;
+    color: $grayFooter;
+  }
+  .btn:hover {
+    background: $light;
+    color: $dark;
+    border: $light 1px solid;
+  }
+}
+
+// _____________________ Hover CSS _____________________
+
+// Underline From Left 
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: $light;
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+// Float 
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+/* 
+Home Page
+==============================================================================================================================================================
+*/ 
+
+#home {
+  overflow-x: hidden;
+  background: $lighter;
+  #showCase {
+    margin-top: -58px;
+    width: 100%;
+    background: $gradient;
+    .row{
+      padding-top: 250px;
+      padding-Bottom: 200px;
+    }
+    #waveUp {
+      width: 100vw;
+      height: 100%;
+      margin-bottom: -2px;
+    }
+  }
+  
+  #whatWeBuild {
+    .content {
+      margin-top: 70px;
+      margin-bottom: 80px;
+    }
+  }
+  #theProsses {
+    background: $gradient;
+    margin: 100px 0 0 0;
+    #the_prosses_content {
+      padding-top: 100px;
+    }
+    #the_prosses_row {
+      padding-bottom: 120px;
+    }
+    #waveDown {
+      width: 100vw;
+      height: 100%;
+      margin-top: -5px;
+    }
+    #waveUp {
+      width: 100vw;
+      height: 100%;
+    }
+  }
+  #ourTechnologies {
+    ul li {
+      list-style: none;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) { 
+  #home {
+    #whatWeBuild {
+      img {
+        max-width: 350px;
+      }
+    }
+    #showCase {
+      .row {
+        padding-top: 150px;
+        padding-Bottom: 150px;
+      }
+    }
+  }
+}
+@media (max-width: 575.98px) { 
+  #home {
+    #theProsses {
+      img {
+        width: 150px;
+      }
+    }
+  }
+}
+
+/* 
+Pricing Page
+==============================================================================================================================================================
+*/ 
+
+#pricing {
+
+  // bootstrap hack: fix content width inside hidden tabs
+  .tab-content>.tab-pane {display: block;visibility: hidden;}
+  .tab-content>.tab-pane.active {visibility: visible;}
+  .tab-content{position: relative;}
+  .tab-pane:not(:first-child){position: absolute;width: 100%;height: 100%;top: 0;left: 0;}
+
+  background: $lighter;
+  overflow-x: hidden;
+  #showCase {
+    margin-top: -58px;
+    width: 100%;
+    background: $gradient;
+    .row {
+      padding-top: 150px;
+      padding-Bottom: 100px;
+    }
+    #waveUp {
+      width: 100vw;
+      height: 100%;
+      margin-bottom: -2px;
+    }
+  }
+  #pricingTables {
+    padding-top: 60px;
+    #pricing_tab {
+      border-bottom: $light 2px solid;
+      .active {
+        border-bottom: $info 2px solid;
+        margin-bottom: -2px;
+      }
+    }
+  }
+  #pricingTabContent {
+    .slick-slider {
+      position: relative;
+      .slick-arrow {
+        position: absolute;
+        bottom: 50%;
+        top: 50%;
+        background: $info;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        border: none;
+        margin-bottom: -100px;
+        color: $light;
+        font-size: 20px;
+        box-shadow:  0 .5rem 1rem rgba($black, .15);
+        cursor: pointer;
+        z-index: 100;
+      }
+      .slick-arrow:hover {
+        box-shadow: none;
+        transition: 800ms;
+      }
+      .slick-arrow:focus {
+        outline: none;
+      }
+      .slick-next {
+        right: 0%;
+      }
+      .slick-prev {
+        left: -0%;
+      }
+    }
+    .card {
+      min-width: 300px;
+      .card-header {
+        background: $gradient;
+        color: $light;
+      }
+    }
+    .card:focus {
+      outline: none;
+      border: $primary 1px solid;
+    }
+  }
+}
+@media (max-width: 767.98px) { 
+  #pricing {
+    #pricing_tab {
+      padding-bottom: 40px;      
+      .nav-link {
+        padding-left: 30px;
+      }
+      .active {
+        border-bottom: none;
+        background: $info;
+        border-radius: 50px;
+        color: $light;
+      }
+    }
+  }
+ }
+@media (max-width: 575.98px) { 
+ #pricing {
+  #pricingTabContent {
+    .card {
+      margin: 0 5px 0 5px;
+      border: none;
+    }
+    .card:focus {
+      border: none;
+      box-shadow: none;
+    }
+  }
+ }
+}
+
+/* 
+Contact Page
+==============================================================================================================================================================
+*/ 
+
+#contact {
+  background: $gradient;
+  .navbar {
+    background: $dark;
+  }
+  #contentWrap {
+  
+    #background .alert {
+      //z-index: 200000;
+      position: absolute;
+      width: 100%;
+      height: 50px;
+    }
+    .container {
+      height: calc(100vh - 57px);
+      .row {
+        width: 100%;
+        padding-top: 80px;
+        margin-bottom: 200px;
+      }
+      .form-head {
+        z-index: 3;
+        position: relative;
+        background: $dark; 
+        border-radius: 10px 0 0 10px;
+        .contact-info p { color: $light; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; letter-spacing: .4px;}
+        img {
+          height: 40px;
+          margin: 20px 0 40px 0;
+        }
+        ul {
+          position: absolute;
+          bottom: 0;
+          margin-bottom: 10px;
+          li a {
+            padding: 7px;
+            font-size: 1.1em;
+            color: $light;
+          }
+          li a:hover{ opacity: 0.6; }
+        }
+      }    
+      .form-body{
+        z-index: 3;
+        border-radius: 0 10px 10px 0;
+        z-index: 10;
+        background: $lighter;
+      }  
+      .form { 
+        margin: auto;
+        button {
+          cursor: pointer;
+          color: $light;
+        }
+      }
+    }
+  }
+}
+// Custum Respansive Cantcat Form
+@media (max-width: 768px) {
+  #contact {
+    #contentWrap {
+      .container {
+        height: auto;
+        .row {
+          padding-top: 80px;
+        }
+        .form-head {
+          padding-bottom: 50px;
+          border-radius: 10px 10px 0 0;
+        } 
+        .form-body {
+          border-radius: 0 0 10px 10px;
+        }  
+      }
+    }
+  }
+}
+@media (max-width: 576px) { 
+  #contact {
+    #contentWrap {
+      .container {
+        .form-body {
+          .card-body {
+            padding: 20px 0 10px 0;
+          }
+        }  
+      }
+    }
+  }
+}
+@media (max-height: 1100px) {
+  #contact {
+    #contentWrap {
+      .container {
+       .row {
+        margin-bottom: 100px;
+       }
+      }
+    }
+  }
+}
+
+/* 
+Get Started Page Page
+==============================================================================================================================================================
+*/ 
+#getStarted {
+  background: $lighter;
+  overflow-x: hidden;
+  #showCase {
+    margin-top: -58px;
+    width: 100%;
+    background: $gradient;
+    .row {
+      padding-top: 150px;
+      padding-Bottom: 100px;
+    }
+    #waveUp {
+      width: 100vw;
+      height: 100%;
+      margin-bottom: -2px;
+    }
+  }
+  #form {
+    .row {
+      padding-top: 50px;
+    }
+    p {
+      border-bottom: $light 2px solid;
+      padding-bottom: 20px;
+    }
+    .card {
+      height: 89%;
+      border: none;
+      .card-body {
+        height: 100%;
+      }
+    }
+  }
+}

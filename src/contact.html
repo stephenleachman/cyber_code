@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Title -->
+  <title>CyberCode | Contact</title>
+  <!-- Links -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/hamburger_animation.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body id="contact">
+
+  <!-- Man Nav -->
+  <nav class="navbar navbar-expand navbar-dark bg-dark" id="mainNavBar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="assets/company_logo_light.svg" height="27px" alt="Company Logo"></a>
+      <div class="float-right">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item mr-4 d-none d-sm-block">
+            <a class="nav-link" href="index.html"><i class="fas fa-user-alt mr-2"></i>Client Login</a>
+          </li>
+          <li class="nav-item slide-nave-toggle">
+            <div id="slideNavToggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="slide-menu bg-dark animated slideInRight d-none" id="slideMenu">
+    <ul class="nav mr-auto d-flex flex-column mt-5">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pricing.html">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="get_started.html">Get Started</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item mt-3 d-sm-none">
+        <a class="nav-link" href="index.html"><i class="fas fa-user-alt mr-2"></i>Client Login</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="contentWrap">
+   <!-- CONTACT PAGE -->
+    <div id="background">
+      <div class="container d-flex align-items-center justify-content-center">
+        <div class="row justify-content-center animated fadeInLeft">
+          <div class="col-12 col-md-5 col-lg-4 col-xl-3 text-light form-head shadow px-4">
+            <div class="d-flex justify-content-center">
+              <img src="assets/company_logo.svg" alt="Company Logo">
+            </div>
+            <div class="contact-info text-light">
+              <p><i class="fas fa-map-marker-alt mr-2" aria-hidden="true"></i> Orlando Florida</p>  
+              <p><i class="fas fa-phone mr-2" aria-hidden="true"></i> 222-333-44444</p>  
+              <p><i class="far fa-envelope  mr-2" aria-hidden="true"></i> sails@cybercode.dev</p>
+              <p><i class="far fa-envelope  mr-2" aria-hidden="true"></i> suport@cybercode.dev</p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+            <ul class="nav mt-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="blank"><i class="fab fa-facebook mr-2" aria-hidden="true"></i></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="blank"><i class="fab fa-linkedin-in mr-2" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="blank"><i class="fab fa-pinterest-p mr-2" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="blank"><i class="fab fa-dribbble mr-2" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="blank"><i class="fab fa-twitter mr-2" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="blank"><i class="fab fa-youtube mr-2" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="blank"><i class="fab fa-instagram mr-2" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class=" col-12 col-md-7 col-lg-6 col-xl-5 form-body shadow">
+        <div class="card-body">
+          <form id="contactForm" action="#" method="POST">
+            <div class="form-group">
+              <label for="inputName">Name</label>
+              <input name="name" type="name" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+              <label for="inputSubject">Subject</label>
+              <select name="subject" class="form-control" id="inputSubject">
+                <option>I need a website</option>
+                <option>I need some graphics design work done</option>
+                <option>I need a web app</option>
+                <option>I have an investment related question</option>
+                <option>Just to chat</option>
+              </select>
+              </div>
+              <div class="form-group">
+                <label for="inputMessage">Message</label>
+                <textarea name="message" class="form-control" id="inputMessage" rows="3"></textarea>
+              </div>
+              <input type="hidden" name="_next" value="contact.html" />
+              
+              <button id="submit" type="submit" class="btn float-right btn-info mb-3 text-light">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
