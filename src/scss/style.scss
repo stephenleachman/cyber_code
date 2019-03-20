@@ -15,7 +15,7 @@ $warning:       #FFC107 !default;
 $danger:        #DC3545 !default;
 $light:         #E9ECEF !default;
 $lighter:       #F8F9FA !default;
-$gray:          #6C757D !default;
+$gray:          #adb5bd  !default;
 $grayFooter:    rgb(132, 139, 145) !default;
 $grayHover:     rgba(233, 236, 239, 0.932) !default;
 $gradient:        linear-gradient(to right, $secondary, $primary);/* Chrome 10-25, Safari 5.1-6 */
@@ -105,9 +105,10 @@ a {
     }
     li {
       border-left: 4px solid $dark;
-      a { color: $light; }
+      a { color: $gray; }
       a:hover { 
         background: rgba(0, 0, 0, 0.137); 
+        color: $light;
       }
     }
   }
@@ -132,13 +133,13 @@ a {
     font-size: 1.1em;
   }
   p {
-    color: $grayFooter;
+    color: $gray;
     font-size: .9em;
   }
   .footer-border { border-bottom: rgba(233, 236, 239, 0.404) 1px solid; }
 
   .nav .nav-item .nav-link {
-    color: $grayFooter;
+    color: $gray;
     font-size: .9em;
   }
   .nav .link a:hover {
@@ -149,8 +150,8 @@ a {
     cursor: default;
   }
   .btn {
-    border: $grayFooter 1px solid;
-    color: $grayFooter;
+    border: $gray 1px solid;
+    color: $gray;
   }
   .btn:hover {
     background: $light;
@@ -536,14 +537,14 @@ Get Started Page Page
   }
   #form {
     .row {
-      padding-top: 50px;
+      padding-top: 20px;
     }
     p {
       border-bottom: $light 2px solid;
       padding-bottom: 20px;
     }
     .card {
-      height: 89%;
+      height: 98%;
       border: none;
       .card-body {
         height: 100%;
@@ -551,3 +552,12 @@ Get Started Page Page
     }
   }
 }
+// @media (max-width: 1200px) {
+//   #getStarted {
+//     #form {
+//       .card {
+//         height: 85%;
+//       }
+//     }
+//   }
+// }

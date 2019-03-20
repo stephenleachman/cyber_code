@@ -123,16 +123,16 @@ const waypoint6 = new Waypoint({
     const maintenance = document.getElementById('maintenance');
 
     ux_ui_design.classList.remove('opacity');
-    ux_ui_design.classList.add('animated', 'fadeIn', 'delay-1s');
+    ux_ui_design.classList.add('animated', 'fadeIn');
 
     development.classList.remove('opacity');
-    development.classList.add('animated', 'fadeIn', 'delay-2s');
+    development.classList.add('animated', 'fadeIn', 'delay-1s');
 
     deployment.classList.remove('opacity');
-    deployment.classList.add('animated', 'fadeIn', 'delay-3s');
+    deployment.classList.add('animated', 'fadeIn', 'delay-2s');
 
     maintenance.classList.remove('opacity');
-    maintenance.classList.add('animated', 'fadeIn', 'delay-4s');
+    maintenance.classList.add('animated', 'fadeIn', 'delay-3s');
 
   },
   offset: "50%" 
@@ -167,23 +167,19 @@ const waypoint9 = new Waypoint({
     const servers_hosting = document.getElementById('servers_hosting');
 
     front_end.classList.remove('opacity');
-    front_end.classList.add('animated', 'fadeIn', 'delay-1s');
+    front_end.classList.add('animated', 'fadeIn');
 
     back_end.classList.remove('opacity');
-    back_end.classList.add('animated', 'fadeIn', 'delay-2s');
+    back_end.classList.add('animated', 'fadeIn', 'delay-1s');
 
     cms.classList.remove('opacity');
-    cms.classList.add('animated', 'fadeIn', 'delay-3s');
+    cms.classList.add('animated', 'fadeIn', 'delay-2s');
 
     servers_hosting.classList.remove('opacity');
-    servers_hosting.classList.add('animated', 'fadeIn', 'delay-4s');
+    servers_hosting.classList.add('animated', 'fadeIn', 'delay-3s');
 
   },
   offset: "50%" 
 });
 
-/*
-Pricing Pages Animations
-=======================================================================================================================================================================
-*/
 

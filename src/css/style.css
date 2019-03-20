@@ -6375,9 +6375,10 @@ a {
   #slideMenu ul li {
     border-left: 4px solid #152A49; }
     #slideMenu ul li a {
-      color: #E9ECEF; }
+      color: #adb5bd; }
     #slideMenu ul li a:hover {
-      background: rgba(0, 0, 0, 0.137); }
+      background: rgba(0, 0, 0, 0.137);
+      color: #E9ECEF; }
 
 #mainNavBar {
   z-index: 10000; }
@@ -6394,12 +6395,12 @@ a {
     color: rgba(233, 236, 239, 0.932);
     font-size: 1.1em; }
   #mainFooter p {
-    color: #848b91;
+    color: #adb5bd;
     font-size: .9em; }
   #mainFooter .footer-border {
     border-bottom: rgba(233, 236, 239, 0.404) 1px solid; }
   #mainFooter .nav .nav-item .nav-link {
-    color: #848b91;
+    color: #adb5bd;
     font-size: .9em; }
   #mainFooter .nav .link a:hover {
     color: #E9ECEF; }
@@ -6407,8 +6408,8 @@ a {
     color: rgba(233, 236, 239, 0.932);
     cursor: default; }
   #mainFooter .btn {
-    border: #848b91 1px solid;
-    color: #848b91; }
+    border: #adb5bd 1px solid;
+    color: #adb5bd; }
   #mainFooter .btn:hover {
     background: #E9ECEF;
     color: #152A49;
@@ -6688,12 +6689,12 @@ Get Started Page Page
       height: 100%;
       margin-bottom: -2px; }
   #getStarted #form .row {
-    padding-top: 50px; }
+    padding-top: 20px; }
   #getStarted #form p {
     border-bottom: #E9ECEF 2px solid;
     padding-bottom: 20px; }
   #getStarted #form .card {
-    height: 89%;
+    height: 98%;
     border: none; }
     #getStarted #form .card .card-body {
       height: 100%; }
