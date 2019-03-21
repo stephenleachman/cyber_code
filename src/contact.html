@@ -104,16 +104,16 @@
         <div class="card-body">
           <form id="contactForm" action="#" method="POST">
             <div class="form-group">
-              <label for="inputName">Name</label>
-              <input name="name" type="name" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Enter Name">
+              <label for="inputName">Name <span class="text-info">*</span></label>
+              <input name="name" type="name" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Enter Name" required>
             </div>
             <div class="form-group">
-              <label for="inputEmail">Email</label>
-              <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
+              <label for="inputEmail">Email <span class="text-info">*</span></label>
+              <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Enter Email" required>
             </div>
             <div class="form-group">
               <label for="inputSubject">Subject</label>
-              <select name="subject" class="form-control" id="inputSubject">
+              <select name="subject" class="form-control" id="inputSubject" required>
                 <option>I need a website</option>
                 <option>I need some graphics design work done</option>
                 <option>I need a web app</option>
@@ -122,8 +122,8 @@
               </select>
               </div>
               <div class="form-group">
-                <label for="inputMessage">Message</label>
-                <textarea name="message" class="form-control" id="inputMessage" rows="3"></textarea>
+                <label for="inputMessage">Message <span class="text-info">*</span></label>
+                <textarea name="message" class="form-control" id="inputMessage" rows="3" required></textarea>
               </div>
               <input type="hidden" name="_next" value="contact.html" />
               

@@ -59,6 +59,8 @@
   </div>
 
   <div id="contentWrap">
+      
+    </div>
     <!-- Show Case Section -->
     <section id="showCase"> 
       <div class="container">
@@ -83,12 +85,12 @@
             <div class="col-12 col-lg-9 col-xl-6">
               <div class="card mt-4 shadow animated fadeInUp">
                 <div class="card-body">
-                  <h4 class="text-center animated fadeIn"><span class="number-1 h2 text-info font-weight-bold">1 -</span> Tell Us About Your <span>Business</span></h4>
+                  <h4 class="text-center animated fadeIn mt-lg-3"><span class="number-1 h2 text-info font-weight-bold">1</span> Tell Us About Your <span>Business</span></h4>
                   <p class="text-center animated fadeIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aut incidunt cumque voluptatem ipsam quisquam!</p>
                   <!-- Clients Name -->
                   <div class="form-group mt-2">
-                    <label for="name">Your Name</label>
-                    <input type="name" class="form-control" id="name" placeholder="Your Name" name="clients_name">
+                    <label for="name">Your Name <span class="text-info">*</span></label>
+                    <input type="name" class="form-control" id="name" placeholder="Your Name" name="clients_name" required>
                   </div>
                   <!-- Company Name -->
                   <div class="form-group mt-4">
@@ -125,8 +127,8 @@
                   </div>
                   <!-- Company Email -->
                   <div class="form-group mt-4">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="email">
+                    <label for="email">Email <span class="text-info">*</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="email" required>
                   </div>
                   <!-- Company Phone -->
                   <div class="form-group mt-4">
@@ -135,7 +137,7 @@
                   </div>
                   <!-- Company Website -->
                   <div class="form-group mt-4">
-                    <label for="companyWebsite">Cumpany Website?</label>
+                    <label for="companyWebsite">Cumpany Website</label>
                     <div class="input-group">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="GroupPrepend">www.</span>
@@ -145,7 +147,7 @@
                   </div>
                   <!-- Company Branding -->
                   <div class="form-group mt-4">
-                    <label for="companyBranding">Cumpany Branbing?</label>
+                    <label for="companyBranding">Cumpany Branbing</label>
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" class="custom-control-input" id="logo">
                       <label class="custom-control-label" for="logo">Logo</label>
@@ -168,17 +170,17 @@
               
               <div class="card mt-4 shadow animated fadeInUp">
                 <div class="card-body">
-                  <h4 class="text-center animated fadeIn mt-3 mt-sm-0"><span class="number-2 h2 text-info font-weight-bold">2 -</span> Tell Us About Your <span>Project</span></h4>
+                  <h4 class="text-center animated fadeIn mt-3 mt-sm-0 mt-lg-3"><span class="number-2 h2 text-info font-weight-bold">2 </span> Tell Us About Your <span>Project</span></h4>
                   <p class="text-center animated fadeIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique possimus quas libero, vitae cum fugit.</p>
                   <!-- Project Name -->
                   <div class="form-group mt-2">
-                    <label for="projectName">Project Name</label>
-                    <input type="name" class="form-control" id="projectName" placeholder="Name Your Project" name="project_name">
+                    <label for="projectName">Project Name <span class="text-info">*</span></label>
+                    <input type="name" class="form-control" id="projectName" placeholder="Name Your Project" name="project_name" required>
                   </div>
                   <!-- Company Category -->
                   <div class="form-group mt-4">
-                    <label for="projectCategory">Project Category</label>
-                    <select class="form-control" id="projectCategory" name="project_category"> 
+                    <label for="projectCategory">Project Category <span class="text-info">*</span></label>
+                    <select class="form-control" id="projectCategory" name="project_category" required> 
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -188,8 +190,8 @@
                   </div>
                   <!-- Project Description -->
                   <div class="form-group mt-4">
-                    <label for="projectDescription">Project Description</label>
-                    <textarea class="form-control" id="projectDescription" rows="3" placeholder="Describe Your Project" name="project_description"></textarea>
+                    <label for="projectDescription">Project Description <span class="text-info">*</span></label>
+                    <textarea class="form-control" id="projectDescription" rows="3" placeholder="Describe Your Project" name="project_description" required></textarea>
                   </div>
                   <!-- Project Requirements -->
                   <div class="form-group mt-4">
@@ -210,12 +212,12 @@
                   <div class="form-row mt-4">
                     <div class="form-group col-lg-6">
                       <!-- Your Budget -->
-                      <label for="yourBudget">Your Budget?</label>
+                      <label for="yourBudget">Your Budget <span class="text-info">*</span></label>
                       <div class="input-group">
                         <div class="input-group-prepend">
                           <span class="input-group-text" id="GroupPrepend">$</span>
                         </div>
-                        <input type="text" class="form-control" id="yourBudget" aria-describedby="inputGroupPrepend" name="budget">
+                        <input type="text" class="form-control" id="yourBudget" aria-describedby="inputGroupPrepend" name="budget" required>
                       </div>
                     </div>
                     <div class="form-group col-lg-6 pl-lg-5">

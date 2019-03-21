@@ -33,11 +33,11 @@ slideNavToggle.addEventListener("click", () => {
 window.onscroll = () => {
 
   if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    navBar.classList.add('sticky-top', 'bg-dark', 'animated', 'fadeIn',);
+    navBar.classList.add('sticky-top', 'bg-dark', 'animated', 'fadeIn', 'fixed-top');
 
   } else if (slideNavToggle.classList.contains('open')) {
    
   } else {
-    navBar.classList.remove('sticky-top', 'bg-dark', 'animated', 'fadeIn',);
+    navBar.classList.remove('sticky-top', 'bg-dark', 'animated', 'fadeIn', 'fixed-top');
   };
 };
